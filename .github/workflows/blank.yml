@@ -18,8 +18,8 @@ jobs:
       uses: docker/login-action@v2.1.0
       with:
        registry: registry-1.docker.io
-       username: ${{secrets.DOCKERHUBUSERNAME}}
-       password: ${{secrets.DOCKERHUBPASSWORD}}
+       username: ${{secrets.USERNAME}}
+       password: ${{secrets.PASSWORD}}
   LogintodockerhubQA:
     runs-on: ubuntu-latest
     environment: QA
@@ -29,5 +29,5 @@ jobs:
       uses: docker/login-action@v2.1.0
       with:
        registry: registry-1.docker.io
-       username: ${{secrets.DOCKERHUBUSERNAME}}
-       password: ${{secrets.DOCKERHUBPASSWORD}}
+       username: ${{secrets.USERNAME}}
+       password: ${{secrets.PASSWORD}}
